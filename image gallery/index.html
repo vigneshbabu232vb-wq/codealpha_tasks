@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="titlebar" style="color: bisque;"> 𝗚𝗮𝗹𝗹𝗲𝗿𝘆 𝗼𝗳 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀</h1>
+        <div class="filters">
+            <button onclick="filterImages('all')">All</button>
+            <button onclick="filterImages('nature')">Nature</button>
+            <button onclick="filterImages('city')">City</button> <!-- ✅ Fixed: filterImage → filterImages -->
+        </div>
+        <div class="gallery">
+            <div class="gallery-item city">
+                <img src="city1.jpg" alt="City">
+                <div class="overlay">City</div>
+            </div>
+            <div class="gallery-item nature">
+                <img src="nature 1.avif" alt="Nature">
+                <div class="overlay">Nature</div>
+            </div>
+            <div class="gallery-item city">
+                <img src="city2.avif" alt="City">
+                <div class="overlay">City</div>
+            </div>
+            <div class="gallery-item nature">
+                <img src="nature 2.avif" alt="Nature">
+                <div class="overlay">Nature</div>
+            </div>
+            <div class="gallery-item city">
+                <img src="city3.jpg" alt="City">
+                <div class="overlay">City</div>
+            </div>
+            <div class="gallery-item nature">
+                <img src="nature 3.avif" alt="Nature">
+                <div class="overlay">Nature</div>
+            </div>
+            <div class="gallery-item city">
+                <img src="city4.avif" alt="City">
+                <div class="overlay">City</div>
+            </div>
+            <div class="gallery-item nature">
+                <img src="nature 4.jpeg" alt="Nature">
+                <div class="overlay">Nature</div>
+            </div>
+            <div class="gallery-item city">
+                <img src="city5.jpg" alt="City">
+                <div class="overlay">City</div>
+            </div>
+            <div class="gallery-item nature">
+                <img src="nature 5.jpg" alt="Nature">
+                <div class="overlay">Nature</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img" alt="Lightbox">
+        <div class="controls">
+            <button onclick="prevImage()">Prev</button>
+            <button onclick="nextImage()">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
