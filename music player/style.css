@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.player {
+    background: #2c2c54;
+    padding: 25px;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 5);
+}
+
+.controls button {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 20%;
+    background: #6c5ce7;
+    color: white;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: #a29bfe;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+}
+
+ul li:hover {
+    background: #444;
+}
